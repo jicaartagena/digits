@@ -24,25 +24,24 @@ const ListContactsAdmin = () => {
     };
   }, []);
 
-  return (
-    ready ? (
-      <Container className="py-3">
-        <Row className="justify-content-center">
-          <Col>
-            <div className="text-center">
-              <h2>List Contacts</h2>
-            </div>
-            <Row xs={1} md={2} lg={3} className="g-4">
-              {contacts.map((contact) => (
-                <Col key={contact._id}>
-                  <ContactAdmin contact={contact} />
-                </Col>
-              ))}
-            </Row>
+  return (ready ? (
+    <Container className="py-3">
+      <Row className="justify-content-center">
+        <Col>
+          <Col className="text-center">
+            <h2>List Contacts</h2>
           </Col>
-        </Row>
-      </Container>
-    ) : <LoadingSpinner />
+          <Row xs={1} md={2} lg={3} className="g-4">
+            {contacts.map((contact) => (
+              <Col key={contact._id}>
+                <ContactAdmin contact={contact} />
+              </Col>
+            ))}
+          </Row>
+        </Col>
+      </Row>
+    </Container>
+  ) : <LoadingSpinner />
   );
 };
 
