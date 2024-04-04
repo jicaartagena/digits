@@ -13,7 +13,7 @@ Digits is an application that allows users to:
 
 First, [install Meteor](https://www.meteor.com/install).
 
-Second, [download a copy of Digits](https://github.com/ics-software-engineering/meteor-application-template-react). Note that Digits is a private repo and so you will need to request permission from the author to gain access to the repo.
+Second, [download a copy of Digits](https://jicaartagena.github.io/digits/). Note that Digits is a private repo and so you will need to request permission from the author to gain access to the repo.
 
 Third, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
 
